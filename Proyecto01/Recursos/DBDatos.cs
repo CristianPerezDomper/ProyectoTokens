@@ -1,9 +1,8 @@
-using System.Collections.Generic;
-using System;
+using Proyecto01.Recursos;
 using System.Data;
 using System.Data.SqlClient;
 
-namespace NetCoreYouTube.Recursos
+namespace Proyecto01.Recursos
 {
     public class DBDatos
     {
@@ -109,3 +108,4 @@ namespace NetCoreYouTube.Recursos
         }
     }
 }
+

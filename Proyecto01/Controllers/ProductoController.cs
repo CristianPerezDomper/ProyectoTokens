@@ -1,5 +1,9 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
+using Proyecto01.Models;
+using Proyecto01.Recursos;
+using System.Data;
 
 namespace Proyecto01.Controllers
 {
@@ -16,7 +20,7 @@ namespace Proyecto01.Controllers
 		{
 			List<Parametro> parametros = new List<Parametro>
 			{ 
-				new Parametro("@Estado", true)
+				new Parametro("@Estado", "1")
 			};
 			DataTable tCategoria = DBDatos.Listar("Categoria_Listar", parametros);
 
@@ -33,8 +37,8 @@ namespace Proyecto01.Controllers
 				{
 					categoria = JsonConvert.DeserializeObject<List<Categoria>>(jsonCategoría),
 					producto = JsonConvert.DeserializeObject<List<Producto>>(jsonProducto)
-				};
-			}
+				}
+			};
         }
 
 	}

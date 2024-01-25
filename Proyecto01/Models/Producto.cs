@@ -1,10 +1,7 @@
 namespace Proyecto01.Models
 {
-    public class Categoria
+    public class Producto
     {
-
-        // preguntar sobre nomeclatura o camelcase
-
         public string IDProducto { get; set; }
 
         public string IDCategoria { get; set; }
